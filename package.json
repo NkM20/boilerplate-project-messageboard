@@ -3,26 +3,34 @@
 	"version": "0.0.1",
 	"description": "InfoSec project for freeCodeCamp",
 	"main": "server.js",
+	"type": "module", 
 	"scripts": {
-		"start": "node server.js"
+	  "start": "node server.js",
+	  "test": "mocha"
 	},
 	"dependencies": {
-		"body-parser": "^1.15.2",
-		"chai": "^4.2.0",
-		"chai-http": "^3.0.0",
-		"cors": "^2.8.1",
-		"dotenv": "^8.2.0",
-		"express": "^4.14.0",
-		"helmet": "^3.1.0",
-		"mocha": "^3.2.0"
+	  "body-parser": "^1.15.2",
+	  "chai-http": "^3.0.0",
+	  "cors": "^2.8.1",
+	  "dotenv": "^8.2.0",
+	  "express": "^4.14.0",
+	  "express-rate-limit": "^7.4.1",
+	  "helmet": "^3.1.0",
+	  "mongoose": "^8.7.2",
+	  "morgan": "^1.10.0"
 	},
 	"repository": {
-		"type": "git",
-		"url": "https://github.com/freeCodeCamp/boilerplate-project-messageboard"
+	  "type": "git",
+	  "url": "https://github.com/freeCodeCamp/boilerplate-project-messageboard"
 	},
 	"keywords": [
-		"node",
-		"express"
+	  "node",
+	  "express"
 	],
-	"license": "MIT"
-}
+	"license": "MIT",
+	"devDependencies": {
+	  "chai": "^5.1.1",
+	  "mocha": "^10.7.3"
+	}
+  }
+  
